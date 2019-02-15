@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Test {
+public class TestCompactStr {
 
     /* Require Java 9 To Execute This Code. Please Download From Following Link - http://jdk.java.net/9/ */
 

@@ -1,4 +1,4 @@
-package com.hjdong.dsc;
+package com.hjdong.dsc.strmatch;
 
 public class TestStrRk {
 

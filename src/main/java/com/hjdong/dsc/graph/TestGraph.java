@@ -1,4 +1,4 @@
-package com.hjdong.dsc;
+package com.hjdong.dsc.graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,9 +30,9 @@ public class TestGraph {
 		 *   6-7
 		 */
 		
-		//¹ã¶ÈÓÅÏÈ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		bfs(g1);
-		//Éî¶ÈÓÅÏÈ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		dfs(g1);
 		
 		System.out.println(dfs_search(g1, 0, 9));
@@ -170,11 +170,11 @@ public class TestGraph {
 		
 	}
 
-	class Graph { // ÎŞÏòÍ¼
+	class Graph { // ï¿½ï¿½ï¿½ï¿½Í¼
 
-		private int v; // ¶¥µãµÄ¸öÊı
+		private int v; // ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
 
-		private LinkedList<Integer> adj[]; // ÁÚ½Ó±í
+		private LinkedList<Integer> adj[]; // ï¿½Ú½Ó±ï¿½
 
 		public Graph(int v) {
 			this.v = v;
@@ -184,7 +184,7 @@ public class TestGraph {
 			}
 		}
 
-		public void addEdge(int s, int t) { // ÎŞÏòÍ¼Ò»Ìõ±ß´æÁ½´Î
+		public void addEdge(int s, int t) { // ï¿½ï¿½ï¿½ï¿½Í¼Ò»ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½ï¿½ï¿½
 			adj[s].add(t);
 			adj[t].add(s);
 		}
