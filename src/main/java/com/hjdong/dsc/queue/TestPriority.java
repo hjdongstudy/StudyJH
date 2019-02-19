@@ -1,6 +1,5 @@
-package com.hjdong.dsc;
+package com.hjdong.dsc.queue;
 
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
 public class TestPriority {

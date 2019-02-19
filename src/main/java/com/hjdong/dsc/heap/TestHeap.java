@@ -1,6 +1,7 @@
 package com.hjdong.dsc.heap;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 import java.util.Random;
 
 public class TestHeap {
@@ -11,6 +12,9 @@ public class TestHeap {
 //		int[] test = new int[10];
 //		System.out.println(test.length);
 
+	    PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+	    pq.add(123);
+	    
 		int[] a = initHeap(20);
 		System.out.println(Arrays.toString(a));
 		a = initMaxTopHeap(a);
