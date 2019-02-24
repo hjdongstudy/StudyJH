@@ -167,5 +167,31 @@ public class BinarySearchTree {
 		System.out.println("----------------------------------");
 		delNode(root, new TreeNode(44));
 		TreeTraversalUtils.preOrderTra(root);
+		
+		
+		System.out.println("----------------------------------");
+		System.out.println(findminCommonNode(root, 41, 76));
+		System.out.println(findminCommonNode(root, 17, 41));
+		System.out.println(findminCommonNode(root, 23, 41));
+	}
+
+	private static TreeNode findminCommonNode(TreeNode root, int i, int j) {
+		if (root.getData() >= i && root.getData() <= j) {
+			if (root.getData() == i || root.getData() == j) {//剪枝提前结束
+				return root;
+			}
+		}
+		
+		//如果都比root小，则在左子树尝试继续寻找
+		if (root.getData() >= i && root.getData() >= j && null != root.getL()) {
+			return findminCommonNode(root.getL(), i, j);
+		}
+		
+		if (root.getData() <= i && root.getData() <= j && null != root.getR()) {
+			return findminCommonNode(root.getR(), i, j);
+		}
+		
+		//如果没有提前结束，则继续在上边的左子树或者右子树遍历，这样就可以找到最小公共根了
+		return root;
 	}
 }

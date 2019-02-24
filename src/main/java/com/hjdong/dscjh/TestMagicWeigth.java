@@ -19,22 +19,19 @@ public class TestMagicWeigth {
 
         int n = 3;
         int k = 2;
-//        String[] str = new String[] {"AB", "RAAB", "RA"};
+        String[] str = new String[] {"AB", "RAAB", "RA"};
         
-        String[] str = new String[] {"1", "2", "3", "4"};
-
-        
-        zuhe(str);
-//        permmy(str, 0);
+        permmy(str, 0);
 //        perm(str, 0, str.length - 1, k);
 
         // 输出权值为K的字符串个数
         System.out.println(num);
+        
+        
+//      String[] str = new String[] {"1", "2", "3", "4"};
+//    zuhe(str);
 
     }
-
-    
-    
     
     
     private static void zuhe(String[] str) {

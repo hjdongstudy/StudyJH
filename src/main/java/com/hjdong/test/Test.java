@@ -8,6 +8,10 @@ public class Test {
     public static final int si = 0;
 
     public static void main(String[] args) throws UnsupportedEncodingException {
+    	if (1>0 && 2 +3 >4) {
+    		System.out.println("test");
+    	}
+    	
         String testcompactstr1 = "compact";
         String testcompactstr2 = "compact中文";
         
