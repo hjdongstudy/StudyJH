@@ -1,4 +1,4 @@
-package com.hjdong.dsc;
+package com.hjdong.dsc.strmatch;
 
 public class TestTrieTree {
 
@@ -11,6 +11,7 @@ public class TestTrieTree {
         insertWord(tn, "so");
         insertWord(tn, "see");
         System.out.println(tn);
+        
     }
 
     private static void insertWord(TrieTreeNode tn, String word) {
