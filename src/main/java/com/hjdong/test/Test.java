@@ -2,12 +2,15 @@ package com.hjdong.test;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
 
 public class Test {
     
     public static final int si = 0;
 
     public static void main(String[] args) throws UnsupportedEncodingException {
+    	foo();
+    	
     	if (1>0 && 2 +3 >4) {
     		System.out.println("test");
     	}
@@ -43,4 +46,15 @@ public class Test {
         System.out.println(Charset.defaultCharset());
         
     }
+    
+    public static void foo() {
+
+    	var value = 1;
+
+    	var list = new ArrayList<Integer>();
+
+    	list.add(value);
+//    	 list.add("1"); //无法编译
+    	}
+
 }
