@@ -26,7 +26,9 @@ public class TestMaxSubstrDP {
             }
         }
     
-        System.out.println(Arrays.toString(dpmatrix));
+        for (int i = 0; i < dpmatrix.length; i ++) {
+            System.out.println(Arrays.toString(dpmatrix[i]));
+        }
         
     }  
             
