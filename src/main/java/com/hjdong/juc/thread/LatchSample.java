@@ -1,4 +1,4 @@
-package com.hjdong.base;
+package com.hjdong.juc.thread;
 
 import java.util.concurrent.CountDownLatch;
 
