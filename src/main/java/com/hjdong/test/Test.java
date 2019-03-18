@@ -6,9 +6,15 @@ import java.nio.charset.Charset;
 public class Test {
     
     public static final int si = 0;
-
+    
     public static void main(String[] args) throws UnsupportedEncodingException {
-        String testcompactstr1 = "compact";
+    	char[] stack = new char[5];
+    	System.out.println((int)stack[0]);
+    	
+    	System.out.println((int)Character.MAX_VALUE);
+    	System.out.println((int)Character.MIN_VALUE);
+    	
+    	String testcompactstr1 = "compact";
         String testcompactstr2 = "compact中文";
         
         System.out.println(testcompactstr1.length());

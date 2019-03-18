@@ -12,8 +12,8 @@ public class TestReturn {
 		try {
 			return x+y;
 		} finally {
-			x = 2;
-//			return 3;
+//			x = 2;
+			return 4;
 		}
 	}
 
