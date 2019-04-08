@@ -7,13 +7,16 @@ public class TestBag {
 	public static void main(String[] args) {
 		int[] allbag = new int[]{10,23,44,12,15,17,35,31,58,31,1,3,5,78,9};
 		
-		int w = 100;
-
-		for (int i = 0; i < allbag.length; i ++) {//从i开始找不大于maxW的组合，至往后找
-			int[] haveUseBag = new int[allbag.length];
-			haveUseBag[i] = 1;
-			findBags(allbag, i, allbag[i], w, haveUseBag);
-		}
+		f(0, 0, allbag, 10, 100);
+		
+		
+//		int w = 100;
+//
+//		for (int i = 0; i < allbag.length; i ++) {//从i开始找不大于maxW的组合，至往后找
+//			int[] haveUseBag = new int[allbag.length];
+//			haveUseBag[i] = 1;
+//			findBags(allbag, i, allbag[i], w, haveUseBag);
+//		}
 	}
 
 	/**
@@ -53,12 +56,12 @@ public class TestBag {
 
 
 
-	public int maxW = Integer.MIN_VALUE; // 存储背包中物品总重量的最大值
+	public static int maxW = Integer.MIN_VALUE; // 存储背包中物品总重量的最大值
 	// cw 表示当前已经装进去的物品的重量和；i 表示考察到哪个物品了；
 	// w 背包重量；items 表示每个物品的重量；n 表示物品个数
 	// 假设背包可承受重量 100，物品个数 10，物品重量存储在数组 a 中，那可以这样调用函数：
 	// f(0, 0, a, 10, 100)
-	public void f(int i, int cw, int[] items, int n, int w) {
+	public static void f(int i, int cw, int[] items, int n, int w) {
 		if (cw == w || i == n) { // cw==w 表示装满了 ;i==n 表示已经考察完所有的物品
 			if (cw > maxW)
 				maxW = cw;

@@ -8,6 +8,7 @@ public class TestDsc {
 		// TODO Auto-generated method stub
 		int[] cis = {12,12,1233,11};
 		int cis2[] = {12,12,1233,11};
+		System.out.println(cis.length);
 		
 		LinkedHashMap<String, String> testlhm = new LinkedHashMap<>();
 		testlhm.put("test1", "1");

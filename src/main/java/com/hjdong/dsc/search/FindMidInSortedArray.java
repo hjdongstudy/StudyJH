@@ -6,15 +6,15 @@ public class FindMidInSortedArray {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        int[] s1 = new int[] {1, 3, 4, 9, 22, 32, 98};
-        int[] s2 = new int[] {2, 5, 6};
+        int[] s1 = new int[] {2, 6, 7, 13, 18, 22, 31};
+        int[] s2 = new int[] {3, 5, 8, 9, 16 ,26};
 
-        findMidByMerge(s1, s2);
+//        findMidByMerge(s1, s2);
         System.out.println(Arrays.toString(s1));
         System.out.println(Arrays.toString(s2));
         
         System.out.println(findMedianSortedArrays(s1, s2));
-        System.out.println(findMidByBinarySearch(s1, s2));
+//        System.out.println(findMidByBinarySearch(s1, s2));
         
         
     }

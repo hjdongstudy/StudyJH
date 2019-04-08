@@ -6,6 +6,7 @@ import java.nio.charset.Charset;
 public class Test {
     
     public static final int si = 0;
+    public static volatile Test t;
     
     public static void main(String[] args) throws UnsupportedEncodingException {
     	char[] stack = new char[5];

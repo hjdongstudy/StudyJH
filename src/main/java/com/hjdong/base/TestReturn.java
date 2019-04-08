@@ -5,6 +5,7 @@ public class TestReturn {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(testreturn());
+		System.out.println(testreturnStr());
 	}
 
 	private static int testreturn() {
@@ -16,5 +17,14 @@ public class TestReturn {
 			return 4;
 		}
 	}
+	
+	private static String testreturnStr() {
+        String s1 = "hjdong";
+        try {
+            return s1;
+        } finally {
+            s1 = "modify";
+        }
+    }
 
 }
